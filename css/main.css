@@ -108,11 +108,11 @@ img:hover {
   filter: opacity(25%);
 }
 #theseLinks {
-  background: rgba(112,128,144,.7);
+  background: rgba(255,255,255,.75);
 }
 .linksHeader {
   background: rgba(169,169,169,.8);
-  color: white;
+  color: black;
 }
 #ourLinks {
   width: 100px;
