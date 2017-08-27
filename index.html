@@ -11,34 +11,48 @@
       <!-- "Always control the center of the board." -->
       <div id="main">
         <h1 class="time"></h1>
-        <h4 class="greeting">Hello World</h4>
+        <h4 class="greeting">Hello World!</h4>
       </div>
 
       <!-- Today -->
-      <div id="today">
+      <!-- <div id="today">
         <p>Today</p>
-      </div>
+      </div> -->
 
 
       <!-- Links -->
       <div id="links">
-        <ul class="ourLinks">
-          <li>Links</li>
-          <div id="theseLinks" class="namesForLinks">
-            <div>
-                <li>Adrian</li>
-                <img src="./images/GitHub-Mark-32px.png" />
-                <img src="./images/linkedin.png" />
-            </div>
-            <div>
-                <li>David</li>
-                <img src="./images/GitHub-Mark-32px.png" />
-                <img src="./images/linkedin.png" />
-            </div>
-            <div>
-                <li>Jacob</li>
-                <img src="./images/GitHub-Mark-32px.png" />
-                <img src="./images/linkedin.png" />
+        <ul id="ourLinks">
+          <li id="linksOnPress">Links</li>
+          <div id="parentLinksNode">
+            <div id="theseLinks">
+              <div>
+                  <li class="linksHeader">Adrian</li>
+                  <a href="https://github.com/bernar83">
+                      <img src="./images/GitHub-Mark-32px.png" alt="github logo">
+                  </a>
+                  <a href="https://www.linkedin.com/in/noel-adrian-bernardo-730b07132/">
+                    <img src="./images/linkedin.png" alt="linkedin logo">
+                  </a>
+              </div>
+              <div>
+                  <li class="linksHeader">David</li>
+                  <a href="https://github.com/DavidLarsKetch">
+                    <img src="./images/GitHub-Mark-32px.png" alt="github logo">
+                  </a>
+                  <a href="https://www.linkedin.com/in/david-lars-ketch-b915aa125/">
+                    <img src="./images/linkedin.png" alt="linkedin logo">
+                  </a>
+              </div>
+              <div>
+                  <li class="linksHeader">Jacob</li>
+                  <a href="https://github.com/bakerkretzmar">
+                    <img src="./images/GitHub-Mark-32px.png" alt="github logo">
+                  </a>
+                  <a href="https://www.linkedin.com/in/jacobbakerkretzmar/">
+                    <img src="./images/linkedin.png" alt="linkedin logo">
+                  </a>
+              </div>
             </div>
           </div>
         </ul>
@@ -46,13 +60,14 @@
 
       <!-- Weather -->
       <div id="weather">
-        <h2 class="temp"><span id="tempIcon" class="icon"></span><span id="tempC">--</span></h2>
-        <p id="tempCity">--</p>
+        <h2 class="temp"><span id="tempIcon" class="icon"></span><span id="tempC"></span></h2>
+        <p id="tempCity"></p>
       </div>
 
       <!-- Info -->
       <div id="info">
-        <p>Info</p>
+        <p id="bgTitle"></p>
+        <p id="bgUser"></p>
       </div>
 
       <!-- Quote -->
@@ -62,23 +77,23 @@
 
       <!-- Todo -->
       <div id="todo">
-        <div id="todoBox">
+        <div id="todoBox" class="todoBoxOff">
           <div id="todoHeader">
             <span>Todo</span>
+            <span id="todoCounter"></span>
           </div>
           <div id="todoBody">
             <ul id="todoList">
 
             </ul>
           </div>
-          <form id="todoInputForm" autocomplete="off">
-            <span>
-              <input id="todoInputField" type="text" name="newTodoInputField" placeholder="New Todo">
-            </span>
+          <form id="todoInputForm">
+            <input id="todoInputField" type="text" name="newTodoInputField" placeholder="New Todo" autocomplete="off">
           </form>
         </div>
-      </div>
-
+        <div>
+          <span id="todoButton">Todo</span>
+        </div>
     </div>
 
     <!-- Vendor scripts -->
@@ -90,6 +105,6 @@
     <script src="js/weather.js"></script>
     <script src="js/links.js"></script>
     <script src="js/todo.js"></script>
-
+    <script src="js/backgrounds.js"></script>
   </body>
 </html>
